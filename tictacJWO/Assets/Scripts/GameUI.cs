@@ -40,8 +40,6 @@ public class GameUI : MonoBehaviour
     private void OnDestroy()
     {
         uiRestartButton.onClick.RemoveAllListeners();
-        uiHomeButton.onClick.RemoveAllListeners();
-        uiExitButton.onClick.RemoveAllListeners();
         board.OnWinAction -= OnWinEvent;
     }
     void ExitFunction()

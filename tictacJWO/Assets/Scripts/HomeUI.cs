@@ -13,11 +13,6 @@ public class HomeUI : MonoBehaviour
         uiPlayButton.onClick.AddListener(() => SceneManager.LoadScene(1));
         uiExitUIButton.onClick.AddListener(Exit);
     }
-    private void OnDestroy()
-    {
-        uiPlayButton.onClick.RemoveAllListeners();
-        uiExitUIButton.onClick.RemoveAllListeners();
-    }
     void Exit()
     {
         Debug.Log("quit");
